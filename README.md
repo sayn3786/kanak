@@ -1,0 +1,1 @@
+Kanak Hotel and Resident
