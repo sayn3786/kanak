@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanak Resident and Hotel</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #ff9900, #ffcc33);
+            padding: 30px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            animation: fadeIn 2s ease-in-out;
+        }
+        header h1::after {
+            content: "Welcome to Kanak Resident and Hotel";
+            display: block;
+            font-size: 1.2em;
+            font-weight: lighter;
+            color: #ffebcc;
+            animation: slideIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .info {
+            margin-top: 30px;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .info h2 {
+            margin-top: 0;
+            font-size: 1.8em;
+            color: #ff9900;
+        }
+        .info p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .map {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .map iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .contact {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .contact img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        .contact a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: linear-gradient(135deg, #ff9900, #ffcc33);
+            color: white;
+            font-size: 1em;
+            margin-top: 30px;
+        }
+        .description {
+            margin-top: 30px;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .description h2 {
+            font-size: 1.8em;
+            color: #ff9900;
+        }
+        .description p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .services {
+            margin-top: 30px;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .services h2 {
+            font-size: 1.8em;
+            color: #ff9900;
+        }
+        .services div {
+            margin: 10px 0;
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+        .about-image {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .about-image img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kanak Resident and Hotel</h1>
+    </header>
+    <div class="content">
+        <div class="description">
+            <h2>About Us</h2>
+            <p>Kanak Resident and Hotel offers a perfect blend of luxury and comfort. We provide facilities for a memorable staycation, a stunning wedding banquet hall for your special occasions, and a variety of delicious food options to cater to your taste buds.</p>
+            <p>Experience unmatched hospitality with us, whether you're here for leisure, celebrations, or dining.</p>
+            <div class="about-image">
+                <img src="images\Kanak.jpg" alt="Kanak Resident and Hotel Front View">
+            </div>
+        </div>
+        <div class="services">
+            <h2>Services Provided</h2>
+            <div>Spacious and elegant banquet hall suitable for weddings, receptions, and corporate events.</div>
+            <div>Comfortable and luxurious rooms for a relaxing staycation.</div>
+            <div>Multi-cuisine restaurant serving delicious and hygienic food.</div>
+            <div>Customized catering services for events and gatherings.</div>
+            <div>Professional event planning and decoration services.</div>
+            <div>Ample parking space for guests.</div>
+        </div>
+        <div class="gallery">
+            <img src="images\Image1.jpg" alt="Hotel Image 1">
+            <img src="images\Image2.jpg" alt="Hotel Image 2">
+            <img src="images\Image3.jpg" alt="Hotel Image 3">
+            <img src="images\Image4.jpg" alt="Hotel Image 4">
+            <img src="images\Image5.jpg" alt="Hotel Image 5">
+            <img src="images\Image6.jpg" alt="Hotel Image 6">
+            <img src="images\Image7.jpg" alt="Hotel Image 7">
+            <img src="images\Image8.jpg" alt="Hotel Image 8">
+        </div>
+        <div class="info">
+            <h2>Contact</h2>
+            <div class="contact">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon">
+                <a href="https://wa.me/919142350427" target="_blank">+91 9142350427</a>
+            </div>
+            <div class="contact">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon">
+                <a href="https://wa.me/917070639025" target="_blank">+91 7070639025</a>
+            </div>
+        </div>
+        <div class="info">
+            <h2>Address</h2>
+            <p><strong>Address:</strong> Hotel Kanak Dham, Bagodar, Jharipool NH 19, Near Ghagra Science College, District Giridih, Jharkhand</p>
+        </div>
+        <div class="map">
+            <h2>Find Us on Google Maps</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.997360632617!2d85.863629398628!3d24.06894980194134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDA0JzA4LjIiTiA4NcKwNTEnNDguOSJF!5e0!3m2!1sen!2sin!4v1701234567890!5m2!1sen!2sin" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Hotel Kanak Dham. All rights reserved.</p>
+    </footer>
+</body>
+</html>
