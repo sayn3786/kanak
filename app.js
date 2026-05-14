@@ -23,6 +23,14 @@ const rooms = [
 ];
 
 const galleryImages = [
+    ["images/Image1.jpg", "Decorated hotel entrance"],
+    ["images/Image2.jpg", "Banquet and event setup"],
+    ["images/Image3.jpg", "Hotel decoration view"],
+    ["images/Image4.jpg", "Hotel hall and celebration space"],
+    ["images/Image5.jpg", "Kanak Resident hotel area"],
+    ["images/Image6.jpg", "Hotel service area"],
+    ["images/Image7.jpg", "Event venue photo"],
+    ["images/Image8.jpg", "Hotel property photo"],
     ["images/rooms/deluxe-room.jfif", "AC double bed room"],
     ["images/rooms/standard-room.jfif", "Non-AC double bed room"],
     ["images/rooms/suite-room.jfif", "Super Deluxe room"],
